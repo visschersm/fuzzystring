@@ -2,7 +2,6 @@
 Approximate String Comparision in C#
 
 Port to .NET Standart 1.3
-----
 
 *Originally Hosted on Codplex*
 http://fuzzystring.codeplex.com
