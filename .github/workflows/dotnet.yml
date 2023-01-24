@@ -5,24 +5,27 @@ name: .NET
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
+  pull_request: {}
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['48', 'netstandard2.0', 'netstandard2.1', 'net6.0', 'net7.0' ]
+        configuration: 
 
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: ${{ matrix.dotnet-version }}
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore "src\FuzzyString.sln"
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration ${{ matrix.configuration }}
     - name: Test
       run: dotnet test --no-build --verbosity normal
