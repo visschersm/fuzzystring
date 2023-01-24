@@ -1,6 +1,17 @@
 # fuzzystring
 Approximate String Comparision in C#
 
+Compiled in dotnet:
+- Framework 4.8 
+- Core 6.0, 7.0
+- Standard 2.0, 2.1
+
+Compatibility of dotnet standard
+https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0#select-net-standard-version
+
+*forked from frishin*
+https://github.com/grishin/fuzzystring-standard
+
 Port to .NET Standard 1.3
 
 *Originally Hosted on Codplex*
