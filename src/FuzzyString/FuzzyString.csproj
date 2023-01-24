@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <PackageId>FuzzyString.Standard</PackageId>
-    <PackageVersion>1.1.1</PackageVersion>
+    <TargetFrameworks>net4.8;netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <PackageId>FuzzyString</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
     <Authors>Félix Perreault</Authors>
-    <Description>Porting FuzzyString library to .NET Standard</Description>
+    <Description>Porting FuzzyString library to .NET Core</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Compiled to .NET Standard</PackageReleaseNotes>
+    <PackageReleaseNotes>Compiled to .NET Core</PackageReleaseNotes>
     <Copyright>Félix Perreault</Copyright>
     <PackageTags>fuzzy string</PackageTags>
-    <PackageProjectUrl>https://github.com/grishin/fuzzystring-standard</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/visschersm/fuzzystring</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
